@@ -36,5 +36,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         document.getElementById("responseMessage").style.color = "red";
     });
 });
+// Get the hamburger and navbar elements
+const hamburger = document.getElementById('hamburger');
+const navbar = document.querySelector('.navbar');
+
+// Add click event to toggle the active class
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
 
 
